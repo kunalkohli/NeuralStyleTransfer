@@ -1,3 +1,9 @@
+try:
+  # %tensorflow_version only exists in Colab.
+  %tensorflow_version 2.x  #gpu
+except Exception:
+  pass
+
 import tensorflow as tf
 import tensorflow_hub as hub
 
